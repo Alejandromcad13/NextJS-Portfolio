@@ -2,7 +2,12 @@ import { Social } from "@/typings";
 
 export const fetchSocials = async () => {
     //use the async fetch function to get the contents of an endpoint
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getSocials`)
+    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getSocials`, {
+        method: 'GET',
+        headers: {
+          'Access-Control-Allow-Origin': '*'
+        }
+      })
 
     //we conver the response to readable json format
     const data = await response.json()
