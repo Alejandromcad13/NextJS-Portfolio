@@ -35,6 +35,7 @@ function Header({ socials}: Props) {
           fgColor="gray"
           bgColor="transparent"
           target={"_blank"}
+          key={social._id}
         />
         ))}
       </motion.div>

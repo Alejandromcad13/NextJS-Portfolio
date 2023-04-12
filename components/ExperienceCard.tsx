@@ -52,14 +52,15 @@ const ExperienceCard = ({ experience }: Props) => {
               object-contain mx-1"
               //we use the helper function we created to convert the images to an string url we can use. By default the api returns a non string type
               src={urlFor(exp?.image).url()}
-              alt={exp?.title}/>
+              alt={exp?.title}
+              key={exp?._id}/>
             ))}
           </div>
           <p className="uppercase py-5 text-gray-300">started to work at {experience?.dateStarted} - {experience?.dateEnded}</p>
 
           <ul className="list-disc space-y-4 ml-5 text-lg">
             {experience.points.map((pts)=>(
-              <li>{pts}</li>
+              <li key={pts}>{pts}</li>
             ))}
           </ul>
         </div>
