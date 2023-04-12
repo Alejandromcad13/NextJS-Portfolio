@@ -14,7 +14,7 @@ const ExperienceCard = ({ experience }: Props) => {
     <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0
     w-[400px] md:w-[600px] xl:w-[900px] snap-center
     bg-[#262626] hover:opacity-100 opacity-40 cursor-pointer transition-opacity 
-    duration-200 overflow-hidden overflow-y-scroll p-10 scrollbar scrollbar-track-gray-400/20
+    duration-200 overflow-hidden overflow-y-scroll p-10 scrollbar-track-gray-400/20
     scrollbar-thumb-[#F7AB0A]/80 scrollbar-thin ">
       <motion.div
         initial={{
