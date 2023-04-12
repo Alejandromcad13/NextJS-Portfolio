@@ -65,7 +65,7 @@ const Projects = ({ project }: Props) => {
                   href={proj?.linkToBuild}
                   className="text-lg text-center underline"
                 >
-                  CLICK HERE TO CHECK THE BUILD'S CODE
+                  CLICK HERE TO CHECK THE BUILD&apos;S CODE
                 </Link>
               </div>
             </div>
