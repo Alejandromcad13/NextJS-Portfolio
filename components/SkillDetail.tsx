@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
-import fotoPortafolio from "../images/portfolioimage.png";
 import { Skill } from "@/typings";
 import { urlFor } from "@/sanity";
 

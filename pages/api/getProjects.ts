@@ -20,6 +20,5 @@ export default async function handler(
   //create an object that inside has the type definition and go inside the backend by fetching the above query
   //then put that response inside the socials object
   const projects: Project[] = await sanityClient.fetch(query);
-
   res.status(200).json({ projects });
 }
