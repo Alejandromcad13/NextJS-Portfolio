@@ -5,7 +5,8 @@ export const fetchSocials = async () => {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getSocials`, {
         method: 'GET',
         headers: {
-          'Access-Control-Allow-Origin': '*'
+          'Access-Control-Allow-Origin': '*',
+          cache:'no-cache'
         }
       })
 
@@ -13,6 +14,6 @@ export const fetchSocials = async () => {
     const data = await response.json()
     //we type check the response to make sure the values have the right data types
     const socials:Social[] = data.socials;
-
+    console.log("socials --- ", socials)
     return socials;
 }

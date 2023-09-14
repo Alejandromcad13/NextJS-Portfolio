@@ -1,6 +1,5 @@
 import { GetStaticProps } from "next";
-import { Experiences, Skill, Social, Project } from "@/typings";
-import { PageInfo } from "@/typings";
+import { Experiences, Skill, Social, Project, PageInfo } from "@/typings";
 import { fetchPageInfo } from "@/utils/fetchPageInfo";
 import { fetchProject } from "@/utils/fetchProjects";
 import { fetchExperience } from "@/utils/fetchExperience";

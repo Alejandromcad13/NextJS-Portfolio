@@ -5,13 +5,14 @@ export const fetchSkills = async () => {
     const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getSkills`, {
         method: 'GET',
         headers: {
-          'Access-Control-Allow-Origin': '*'
+          'Access-Control-Allow-Origin': '*',
+          cache:'no-cache'
         }
       })
     //we conver the response to readable json format
     const data = await response.json()
     //we type check the response to make sure the values have the right data types
     const skills:Skill[] = data.skills;
-
+    console.log("skills --- ", skills)
     return skills;
 }
