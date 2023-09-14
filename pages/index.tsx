@@ -6,7 +6,6 @@ import { fetchProject } from "@/utils/fetchProjects";
 import { fetchExperience } from "@/utils/fetchExperience";
 import { fetchSkills } from "@/utils/fetchSkills";
 import { fetchSocials } from "@/utils/fetchSocials";
-import { Inter } from "next/font/google";
 import Head from "next/head";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -18,8 +17,6 @@ import ContactMe from "@/components/ContactMe";
 import Link from "next/link";
 import Image from "next/image";
 import arrowUp from "../images/arrowup.png";
-
-const inter = Inter({ subsets: ["latin"] });
 
 //we specify the type we want the props to have importing the Typing files
 type Props = {
