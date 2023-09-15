@@ -14,6 +14,6 @@ export const fetchSocials = async () => {
     const data = await response.json()
     //we type check the response to make sure the values have the right data types
     const socials:Social[] = data.socials;
-    console.log("socials --- ", socials)
+    console.log("SOCIALS FETCHED SUCCESSFULLY")
     return socials;
 }

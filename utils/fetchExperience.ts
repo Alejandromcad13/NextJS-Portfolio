@@ -15,7 +15,7 @@ export const fetchExperience = async () => {
   const data = await response.json();
   //we type check the response to make sure the values have the right data types
   const experience: Experiences[] = data.experience;
-  console.log("experience --- ", experience)
+  console.log("EXPERIENCE FETCHED SUCCESSFULLY")
 
   return experience;
 };

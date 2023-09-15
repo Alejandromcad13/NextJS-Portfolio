@@ -13,6 +13,6 @@ export const fetchProject = async () => {
     const data = await response.json()
     //we type check the response to make sure the values have the right data types
     const projects:Project[] = data.projects;
-    console.log("projects --- ", projects)
+    console.log("PROJECTS FETCHED SUCCESSFULLY")
     return projects;
 }

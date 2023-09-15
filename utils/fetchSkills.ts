@@ -13,6 +13,6 @@ export const fetchSkills = async () => {
     const data = await response.json()
     //we type check the response to make sure the values have the right data types
     const skills:Skill[] = data.skills;
-    console.log("skills --- ", skills)
+    console.log("SKILLS FETCHED SUCCESSFULLY")
     return skills;
 }
