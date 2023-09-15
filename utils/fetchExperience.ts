@@ -6,8 +6,7 @@ export const fetchExperience = async () => {
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/getExperience`, {
       method: 'GET',
       headers: {
-        'Access-Control-Allow-Origin': '*',
-        cache:'no-cache'
+        'Access-Control-Allow-Origin': '*'
       }
     }
   );
@@ -15,7 +14,6 @@ export const fetchExperience = async () => {
   const data = await response.json();
   //we type check the response to make sure the values have the right data types
   const experience: Experiences[] = data.experience;
-  console.log("EXPERIENCE FETCHED SUCCESSFULLY")
 
   return experience;
 };
